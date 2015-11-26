@@ -80,10 +80,9 @@ func SendSlackMessage (azurePayload AzureWebhookPayload) {
 
     // Construct a slack webhook payload
     // TODO Constructing an actual message (containing event message, etc...)
+    example, err := json.Marshal(azurePayload)
     slackPayload = SlackWebhookPayload{
-        Text: `
-            Hello World
-        `,
+        Text: string(example),
     }
 
     // Create a byte array of the JSON stringified slack payload
