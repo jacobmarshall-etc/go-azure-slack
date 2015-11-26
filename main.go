@@ -7,9 +7,9 @@ import (
     "io"
     "io/ioutil"
     "strings"
+    "fmt"
 
     "github.com/gorilla/mux"
-    "fmt"
 )
 
 type AzureWebhookPayload struct {
