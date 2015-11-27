@@ -1,7 +1,6 @@
 FROM golang
 
 ADD . /go/src/github.com/jacobmarshall/go-azure-slack
-RUN go get github.com/gorilla/mux && \
-    go install github.com/jacobmarshall/go-azure-slack
+RUN go install github.com/jacobmarshall/go-azure-slack
 
 ENTRYPOINT /go/bin/go-azure-slack

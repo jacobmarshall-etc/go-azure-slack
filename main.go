@@ -10,7 +10,7 @@ import (
     "strings"
     "time"
 
-    "github.com/gorilla/mux"
+    "github.com/jacobmarshall/go-azure-slack/Godeps/_workspace/src/github.com/gorilla/mux"
     "github.com/jacobmarshall/go-azure-slack/util/slackwebhook"
     "github.com/jacobmarshall/go-azure-slack/util/azurewebhook"
 )
