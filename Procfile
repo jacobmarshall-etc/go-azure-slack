@@ -1,0 +1,1 @@
+web: go-azure-slack
