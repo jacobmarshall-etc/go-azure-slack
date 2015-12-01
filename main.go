@@ -75,7 +75,7 @@ func SendSlackMessage (azurePayload azurewebhook.Payload) {
                     " " + azurePayload.Context.Condition.MetricName + ")",
                 Fields: []slackwebhook.Field{
                     slackwebhook.Field{
-                        Title: "Site",
+                        Title: "Resource",
                         Value: azurePayload.Context.ResourceName,
                         Short: true,
                     },
